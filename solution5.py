@@ -1,14 +1,13 @@
 # Write code for algorithm 5 below
 
-import array as arr
-sample_array = arr.array('i', [1, 5, -2, 10])
-
-
-def array_sum(numberArr):
-    if len(numberArr) == 1:
-        return numberArr[0]
+def count_down(n):
+    print(n)
+    if n==0:
+        return
     
     # Recursive case
-    return numberArr[0] + array_sum(numberArr[1:])
+    else:
+        return count_down(n-1)
 
-print(array_sum(sample_array))
+n=8
+print(count_down(n))
