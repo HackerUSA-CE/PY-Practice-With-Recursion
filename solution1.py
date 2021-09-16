@@ -1,13 +1,15 @@
 # Write code for algorithm 1 below
 
-import array as arr
+def count_down(n):
 
-int_array = arr.array('i', [1,2,3,4,5])
+    # Base case
+    if n==0:
+        return
+    
+    # Recursive case
+    else:
+        print(n)
+        count_down(n-1)
 
-def show_elements(arr): 
-
-    for el in arr:
-        print(el)
-
-
-show_elements(int_array) 
+n=8
+count_down(n)

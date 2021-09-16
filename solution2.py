@@ -1,11 +1,11 @@
 # Write code for algorithm 2 below
 
-import array as arr
+def natural_numbers(lowerNum, higherNum):
+    if lowerNum > higherNum:
+        return
+    else:
+        print(lowerNum)
+        natural_numbers(lowerNum + 1, higherNum)
 
-nums = arr.array('i', [5, 10, 2])
-
-def get_address_and_length(arr):
-    print(arr.buffer_info())
-
-
-get_address_and_length(nums)
+n=10
+natural_numbers(1,n)
