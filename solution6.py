@@ -1,1 +1,0 @@
-# Write code for algorithm 6 below
