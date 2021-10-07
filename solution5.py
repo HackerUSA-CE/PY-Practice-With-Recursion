@@ -1,13 +1,17 @@
 # Write code for algorithm 5 below
 
-def greatest_common_divisor(a, b):
-    if(b==0):
-        return a
+def isPalindrome(word):
+    
+    # base case
+    if len(word) < 2:
+        return True 
+    
     else: 
-        # Check out the modulus operator % https://www.w3schools.com/python/python_operators.asp
-        return greatest_common_divisor(b, a%b)
+        if word[0] == word[-1]:
+            return isPalindrome(word[1:-1])
+        else: 
+            return False
 
-a=15
-b=10
 
-print(greatest_common_divisor(a,b))
+sample_word = 'radar'
+print(isPalindrome(sample_word))

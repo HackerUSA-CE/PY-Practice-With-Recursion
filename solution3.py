@@ -1,13 +1,11 @@
 # Write code for algorithm 3 below
 
-def power(base,exp):
-    # any number to the 0th power is equal to 1, example 2^0=1
-    if exp==0:
-        return 1
-    else: 
-        return base*power(base,exp-1)
+def fibonacci(n):
+    if n<=1:
+        return n
+    else:
+        return(fibonacci(n-1)+fibonacci(n-2))
 
-a=3
-b=2
-# 3^2=3*3 so 9 is the expected output
-print(power(a,b))
+n=2
+for i in range(n):
+    print(fibonacci(i))

@@ -1,17 +1,13 @@
 # Write code for algorithm 4 below
 
-def isPalindrome(word):
-    
-    # base case
-    if len(word) < 2:
-        return True 
-    
+def power(base,exp):
+    # any number to the 0th power is equal to 1, example 2^0=1
+    if exp==0:
+        return 1
     else: 
-        if word[0] == word[-1]:
-            return isPalindrome(word[1:-1])
-        else: 
-            return False
+        return base*power(base,exp-1)
 
-
-sample_word = 'radar'
-print(isPalindrome(sample_word))
+a=3
+b=2
+# 3^2=3*3 so 9 is the expected output
+print(power(a,b))
